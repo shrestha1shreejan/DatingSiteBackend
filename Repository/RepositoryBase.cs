@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -46,6 +47,11 @@ namespace Repository
         public void Update(T entity)
         {
             this._repositoryContext.Set<T>().Update(entity);
+        }
+
+        public async Task SaveAsync()
+        {
+            await this._repositoryContext.SaveChangesAsync();
         }
 
         #endregion

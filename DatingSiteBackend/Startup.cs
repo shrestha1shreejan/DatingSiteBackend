@@ -32,6 +32,8 @@ namespace DatingSiteBackend
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
             services.ConfigureDbContext(Configuration);
+            services.ConfigureAuthService();
+            services.ConfigureJwtBearerAuth(Configuration);
             services.AddControllers().AddNewtonsoftJson(opt => {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
@@ -52,6 +54,7 @@ namespace DatingSiteBackend
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

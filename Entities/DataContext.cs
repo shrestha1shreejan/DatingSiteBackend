@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Entities
 {
@@ -7,5 +8,7 @@ namespace Entities
         public DataContext (DbContextOptions<DataContext> options) : base(options)
         {
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }

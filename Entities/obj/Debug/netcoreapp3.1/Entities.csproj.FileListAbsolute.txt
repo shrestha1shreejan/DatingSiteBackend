@@ -11,14 +11,10 @@ C:\Users\shree\source\repos\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities
 C:\Users\shree\source\repos\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 C:\Users\shree\source\repos\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
 D:\Projects\DatingSite\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
-D:\Projects\DatingSite\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
-D:\Projects\DatingSite\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
 D:\Projects\DatingSite\Entities\bin\Debug\netcoreapp3.1\Entities.dll
 D:\Projects\DatingSite\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
-D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
-D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

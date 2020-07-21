@@ -2,3 +2,11 @@
 2020-07-20 09:26:46.8553 ERROR Error
 2020-07-20 09:26:46.8553 DEBUG Debug
 2020-07-20 09:26:46.8553 WARN Warning
+2020-07-20 18:20:17.6641 INFO sucessfully registerd user with username: ravi
+2020-07-20 18:20:39.1223 INFO User with matching username: ravi found 
+2020-07-20 19:08:35.6257 INFO Login method executed for user with username: ravi
+2020-07-20 19:08:36.5176 INFO Login successful for user with username: ravi
+2020-07-20 19:24:00.7275 INFO Information
+2020-07-20 19:24:00.7423 ERROR Error
+2020-07-20 19:24:00.7423 DEBUG Debug
+2020-07-20 19:24:00.7571 WARN Warning

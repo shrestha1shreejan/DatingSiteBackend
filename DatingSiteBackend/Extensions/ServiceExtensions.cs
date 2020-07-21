@@ -1,10 +1,15 @@
-﻿using Entities;
+﻿using Contracts;
+using Entities;
 using FileLogger;
 using FileLogger.Abstraction;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using Repository;
+using System.Text;
 
 namespace DatingSiteBackend.Extensions
 {
@@ -50,6 +55,35 @@ namespace DatingSiteBackend.Extensions
         {
             var connectionString = configuration["DatingSiteDB:ConnectionStrings"];
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
+        }
+
+        /// <summary>
+        /// Configuring auth service
+        /// </summary>
+        /// <param name="services"></param>
+        public static void ConfigureAuthService(this IServiceCollection services)
+        {
+            services.AddScoped<IAuthRepository, AuthRepository>();
+        }
+
+        /// <summary>
+        /// Configuring Jwt Authentication
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        public static void ConfigureJwtBearerAuth(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
+                options => {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.ASCII.GetBytes(configuration.GetSection("AppSettings:Token").Value)),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
         }
 
     }

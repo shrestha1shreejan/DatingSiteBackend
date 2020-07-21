@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingSiteBackend", "DatingSiteBackend\DatingSiteBackend.csproj", "{7BF72634-7379-4B14-B4AD-C3E955DA7A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingSiteBackend", "DatingSiteBackend\DatingSiteBackend.csproj", "{7BF72634-7379-4B14-B4AD-C3E955DA7A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{2632C5AB-8B7A-467B-87CF-F9D96AEE0E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{2632C5AB-8B7A-467B-87CF-F9D96AEE0E34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{B32D69EF-706C-43F0-8AB6-488A5EDD3F5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{B32D69EF-706C-43F0-8AB6-488A5EDD3F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{12019889-D81C-4BE4-AC83-E4E5B98D2490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{12019889-D81C-4BE4-AC83-E4E5B98D2490}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

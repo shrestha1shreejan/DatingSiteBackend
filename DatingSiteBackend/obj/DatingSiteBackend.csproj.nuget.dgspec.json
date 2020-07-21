@@ -30,7 +30,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\DatingSite\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Projects\\DatingSite\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -102,13 +106,27 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "FileLogger": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[3.1.6, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [
@@ -178,12 +196,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.6, )"
             }
           },
           "imports": [
@@ -234,9 +246,6 @@
             "projectReferences": {
               "D:\\Projects\\DatingSite\\Contracts\\Contracts.csproj": {
                 "projectPath": "D:\\Projects\\DatingSite\\Contracts\\Contracts.csproj"
-              },
-              "D:\\Projects\\DatingSite\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Projects\\DatingSite\\Entities\\Entities.csproj"
               }
             }
           }
@@ -249,6 +258,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "FileLogger": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
