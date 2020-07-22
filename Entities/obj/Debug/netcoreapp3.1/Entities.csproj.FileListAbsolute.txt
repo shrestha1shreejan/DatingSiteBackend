@@ -18,3 +18,4 @@ D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+D:\Projects\DatingSite\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache

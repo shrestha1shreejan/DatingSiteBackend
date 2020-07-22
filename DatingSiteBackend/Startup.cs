@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using AutoMapper;
 using DatingSiteBackend.Extensions;
 using FileLogger.Abstraction;
 using Microsoft.AspNetCore.Builder;
@@ -29,6 +30,7 @@ namespace DatingSiteBackend
             services.ConfigureLoggerService();
             services.ConfigureDbContext(Configuration);
             services.ConfigureAuthService();
+            services.AddAutoMapper(typeof(Startup));
             services.ConfigureJwtBearerAuth(Configuration);
             services.AddControllers().AddNewtonsoftJson(opt => {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;

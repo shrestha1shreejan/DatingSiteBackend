@@ -1,0 +1,33 @@
+2020-07-22 09:22:56.9317 INFO Login method executed for user with username: ravi
+2020-07-22 09:22:58.0828 ERROR Password validation error
+2020-07-22 09:23:18.1249 INFO Login method executed for user with username: ravi
+2020-07-22 09:23:18.1597 INFO Login successful for user with username: ravi
+2020-07-22 09:43:50.8255 INFO Login method executed for user with username: ravi
+2020-07-22 09:43:50.8507 INFO Login successful for user with username: ravi
+2020-07-22 09:47:14.8434 INFO Login method executed for user with username: ravi
+2020-07-22 09:47:14.8434 INFO Login successful for user with username: ravi
+2020-07-22 09:49:47.1185 INFO Login method executed for user with username: ravi
+2020-07-22 09:49:47.1185 INFO Login successful for user with username: ravi
+2020-07-22 09:55:48.5373 INFO Login method executed for user with username: ravi
+2020-07-22 09:55:48.5540 INFO Login successful for user with username: ravi
+2020-07-22 10:10:16.8948 INFO Login method executed for user with username: ravi
+2020-07-22 10:10:16.9141 INFO Login successful for user with username: ravi
+2020-07-22 10:24:26.9278 INFO Login method executed for user with username: raja
+2020-07-22 10:24:26.9492 ERROR No such user with username: raja exists
+2020-07-22 10:24:33.5056 INFO Login method executed for user with username: ravi
+2020-07-22 10:24:33.5114 INFO Login successful for user with username: ravi
+2020-07-22 10:41:46.6932 INFO Login method executed for user with username: ravi
+2020-07-22 10:41:46.7154 INFO Login successful for user with username: ravi
+2020-07-22 10:59:58.5429 INFO Login method executed for user with username: ravi
+2020-07-22 10:59:58.5627 INFO Login successful for user with username: ravi
+2020-07-22 15:03:02.1969 INFO Login method executed for user with username: ravi
+2020-07-22 15:03:02.3546 ERROR No such user with username: ravi exists
+2020-07-22 15:03:09.8100 INFO sucessfully registerd user with username: ravi
+2020-07-22 15:03:13.3951 INFO Login method executed for user with username: ravi
+2020-07-22 15:03:13.4135 INFO Login successful for user with username: ravi
+2020-07-22 15:04:06.0834 INFO returned all users
+2020-07-22 15:08:20.4958 INFO returned all users
+2020-07-22 15:26:29.3046 INFO returned all users
+2020-07-22 15:26:46.5709 INFO returned all users
+2020-07-22 15:28:42.3204 INFO returned all users
+2020-07-22 15:28:47.8570 INFO returned all users

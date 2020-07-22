@@ -131,8 +131,6 @@ D:\Projects\DatingSite\DatingSiteBackend\bin\Debug\netcoreapp3.1\Entities.pdb
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.csprojAssemblyReference.cache
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.AssemblyInfoInputs.cache
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.AssemblyInfo.cs
-D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.csproj.CoreCompileInputs.cache
-D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.RazorTargetAssemblyInfo.cache
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.csproj.CopyComplete
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\staticwebassets\DatingSiteBackend.StaticWebAssets.Manifest.cache
@@ -140,3 +138,8 @@ D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\staticwebassets
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.dll
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.pdb
 D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.genruntimeconfig.cache
+D:\Projects\DatingSite\DatingSiteBackend\bin\Debug\netcoreapp3.1\SeedData\UserSeedData.json
+D:\Projects\DatingSite\DatingSiteBackend\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Projects\DatingSite\DatingSiteBackend\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.csproj.CoreCompileInputs.cache
+D:\Projects\DatingSite\DatingSiteBackend\obj\Debug\netcoreapp3.1\DatingSiteBackend.MvcApplicationPartsAssemblyInfo.cache

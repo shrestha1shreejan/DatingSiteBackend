@@ -17,7 +17,7 @@ namespace Contracts
 
         void Delete(T entity);
 
-        Task SaveAsync();
+        Task<bool> SaveAsync();
 
     }
 }

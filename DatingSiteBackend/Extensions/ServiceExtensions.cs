@@ -64,6 +64,7 @@ namespace DatingSiteBackend.Extensions
         public static void ConfigureAuthService(this IServiceCollection services)
         {
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         /// <summary>

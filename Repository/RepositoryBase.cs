@@ -49,9 +49,9 @@ namespace Repository
             this._repositoryContext.Set<T>().Update(entity);
         }
 
-        public async Task SaveAsync()
+        public async Task<bool> SaveAsync()
         {
-            await this._repositoryContext.SaveChangesAsync();
+            return await this._repositoryContext.SaveChangesAsync() > 0;
         }
 
         #endregion
