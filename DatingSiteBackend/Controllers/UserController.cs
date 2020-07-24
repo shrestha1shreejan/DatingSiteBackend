@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace DatingSiteBackend.Controllers
@@ -55,6 +56,46 @@ namespace DatingSiteBackend.Controllers
 
             return Ok(userToReturn);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser (Guid id, UserForUpdateDto userForUpdate)
+        {
+            if (!ChcekUserIsAuthorized(id))
+            {
+                _logger.LogError($"Unauthorzied user with userid: {id}");
+                return Unauthorized();
+            }
+
+            var userFromRepo = await _repository.GetUserAsync(id);
+
+            _mapper.Map(userForUpdate, userFromRepo);
+
+            _repository.UpdateUser(userFromRepo);
+
+            if (await _repository.SaveAsync())
+            {
+                _logger.LogInfo($"Update for user with id: {id} successful");
+                return NoContent();
+            }
+
+            _logger.LogError($"Error to update the user with id {id}");
+            throw new Exception($"Updating user with {id} failed to save");
+        }
+
+
+
+        #region Private Methods
+
+        private bool ChcekUserIsAuthorized(Guid id)
+        {
+            if (id.ToString() != User.FindFirst(ClaimTypes.NameIdentifier).Value)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        #endregion
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
+using System.Security.Claims;
 
 namespace DatingSiteBackend.Extensions
 {
@@ -35,5 +36,16 @@ namespace DatingSiteBackend.Extensions
 
             return age;
         }
+
+        public  static bool ChcekUserIsAuthorized(Guid id, ClaimsPrincipal user)
+        {
+            if (id.ToString() != user.FindFirst(ClaimTypes.NameIdentifier).Value)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
     }
 }

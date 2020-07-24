@@ -12,8 +12,12 @@ namespace Contracts
 
         void DeleteUser(User user);
 
+        void UpdateUser(User user);
+
         Task<IEnumerable<User>> GetAllUsersAsync();
 
         Task<User> GetUserAsync(Guid userid);
+
+        //Task<bool> SaveAll();
     }
 }

@@ -34,6 +34,11 @@ namespace Repository
             Delete(user);
         }
 
+        public void UpdateUser(User user)
+        {
+            Update(user);
+        }
+
         public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
             var users =  await FindAll().OrderBy(user => user.Username).Include(p => p.Photos).ToListAsync();
@@ -44,8 +49,7 @@ namespace Repository
         {
             var user = await FindByCondition(user => user.Id.Equals(userid)).Include(p => p.Photos).FirstOrDefaultAsync();
             return user;
-        }
-
+        }           
 
     }
 }
